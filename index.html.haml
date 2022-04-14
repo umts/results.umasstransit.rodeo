@@ -8,8 +8,10 @@
 
   %body
     %main
-      %h1 UMass Transit Safety Roadeo results archive
-      %ul
-        - years.each do |year|
-          %li
-            %a{ href: "#{year}/" }= year
+      %h1 UMass Transit Safety Roadeo
+      %article
+        %h2 Previous year results:
+        %ul
+          - years.each do |year|
+            %li
+              %a{ href: "#{year}/" }= year
