@@ -1,0 +1,15 @@
+!!!
+%html{ lang: 'en-US' }
+  %head
+    %meta{ charset: 'utf-8' }
+    %meta{ name: :viewport, content: 'width=device-width, initial-scale=1' }
+    %title UMTS Roadeo Results Archive
+    %link{ rel: :stylesheet, href: 'style.css' }
+
+  %body
+    %main
+      %h1 UMass Transit Safety Roadeo results archive
+      %ul
+        - years.each do |year|
+          %li
+            %a{ href: "#{year}/" }= year
