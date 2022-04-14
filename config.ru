@@ -1,4 +1,10 @@
 # frozen_string_literal: true
 
-not_found = ->(_) { [404, { 'Content-Type' => 'text/plain' }, ['Not Found']] }
-run Rack::Static.new(not_found, urls: [''], root: '.', index: 'index.html')
+module NotFound
+  def self.call(_)
+    body = File.read('404.html')
+    return [404, { 'Content-Type' => 'text/html' }, body.lines]
+  end
+end
+
+run Rack::Static.new(NotFound, urls: [''], root: '.', index: 'index.html', cascade: true)
