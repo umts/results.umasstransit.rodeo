@@ -22,8 +22,11 @@ Within the [umasstransit.rodeo][umtsr] app, run
 rake roadeo:archive
 ```
 
-Take everything from the `archive/` directory there and drop it into your new
-year directory in this repository.
+Take the `index.html` from the `archive/` directory there and drop it into your
+new year directory in this repository.
+
+Take everything from `archive/assets/` and put it in `assets/` in this
+repository. There might be some overlap from year-to-year.
 
 Then run
 
