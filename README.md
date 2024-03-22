@@ -9,8 +9,8 @@ Adding a year
 -------------
 
 ```
-rake new         # Adds a directory for this year
-rake 'new[2001]' # Adds a directory for 2001
+bin/rake new         # Adds a directory for this year
+bin/rake 'new[2001]' # Adds a directory for 2001
 ```
 
 Generating the archive
@@ -31,7 +31,7 @@ repository. There might be some overlap from year-to-year.
 Then run
 
 ```
-rake index
+bin/rake index
 ```
 
 in this repository to rebuild the `index.html`.
@@ -40,10 +40,10 @@ Preview
 -------
 
 ```
-rackup
+script/server
 ```
 
-will launch a static web server. Check it out at http://localhost:9292/
+will launch a static web server. Check it out at <http://localhost:9292/>
 
 
 Publish
