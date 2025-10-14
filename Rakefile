@@ -14,6 +14,6 @@ task :index do
   years = Dir.glob('*').select { |f| f =~ /\d{4}/ }
 
   File.open(File.join(__dir__, 'index.html'), 'w') do |output|
-    output.write Tilt::HamlTemplate.new('index.html.haml').render(self, years: years)
+    output.write Tilt::HamlTemplate.new('index.html.haml').render(self, years:)
   end
 end
