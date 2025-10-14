@@ -6,13 +6,13 @@ GEM
       thor
       tilt
     nio4r (2.7.4)
-    puma (6.4.3)
+    puma (7.0.4)
       nio4r (~> 2.0)
-    rack (3.0.16)
-    rake (13.1.0)
-    temple (0.10.3)
+    rack (3.2.3)
+    rake (13.3.0)
+    temple (0.10.4)
     thor (1.4.0)
-    tilt (2.3.0)
+    tilt (2.6.1)
 
 PLATFORMS
   x86_64-linux
