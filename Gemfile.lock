@@ -1,18 +1,18 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    haml (6.3.0)
+    haml (7.2.0)
       temple (>= 0.8.2)
       thor
       tilt
-    nio4r (2.7.4)
-    puma (7.0.4)
+    nio4r (2.7.5)
+    puma (8.0.1)
       nio4r (~> 2.0)
     rack (3.2.6)
-    rake (13.3.0)
+    rake (13.4.2)
     temple (0.10.4)
-    thor (1.4.0)
-    tilt (2.6.1)
+    thor (1.5.0)
+    tilt (2.7.0)
 
 PLATFORMS
   x86_64-linux
